@@ -111,7 +111,7 @@ export default function FinalTreasure(){
               <div className="finalCard">
                 <div className="finalTop">
                   <div className="finalCircle">
-                                          <img src={import.meta.env.BASE_URL + "assets/couple/left.JPG"} alt="Couple photo left" className="couple-circle" />
+                                          <img src={import.meta.env.BASE_URL + "assets/couple/left.JPG"} alt="Couple photo left" />
                   </div>
                   <div className="finalCircle">
                     <img src={import.meta.env.BASE_URL + "assets/couple/right.JPG"} alt="Couple photo right" />
@@ -119,7 +119,7 @@ export default function FinalTreasure(){
                 </div>
 
                 <div className="finalInvite">
-                                      <img src={import.meta.env.BASE_URL + "assets/doodles/wedding-card-ai.png"} alt="Chettinad wedding invitation card" className="couple-circle" />
+                                      <img src={import.meta.env.BASE_URL + "assets/doodles/wedding-card-ai.png"} alt="Chettinad wedding invitation card" />
                 </div>
               </div>
 
