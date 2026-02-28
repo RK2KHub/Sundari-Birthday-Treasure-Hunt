@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07070b"/>
+      <stop offset="0.55" stop-color="#10101a"/>
+      <stop offset="1" stop-color="#07070b"/>
+    </linearGradient>
+
+    <linearGradient id="velvet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141424"/>
+      <stop offset="1" stop-color="#0b0b12"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7e7b0"/>
+      <stop offset="0.45" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#fff2c7"/>
+    </linearGradient>
+
+    <linearGradient id="goldDeep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c89d2d"/>
+      <stop offset="1" stop-color="#f5dd9a"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#e50914" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000" flood-opacity=".55"/>
+    </filter>
+
+    <filter id="soft3d" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity=".45"/>
+      <feDropShadow dx="0" dy="-2" stdDeviation="2" flood-color="#fff" flood-opacity=".06"/>
+    </filter>
+
+    <pattern id="kolam" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M12 32 C20 18 44 18 52 32 C44 46 20 46 12 32Z" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
+      <circle cx="12" cy="32" r="3" fill="#ffffff" fill-opacity=".05"/>
+      <circle cx="52" cy="32" r="3" fill="#ffffff" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="0" y="0" width="1400" height="900" fill="url(#night)"/>
+  <rect x="0" y="0" width="1400" height="900" fill="url(#glow)"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="90" y="80" width="1220" height="740" rx="42" fill="url(#velvet)"/>
+    <rect x="112" y="102" width="1176" height="696" rx="34" fill="url(#kolam)" opacity=".8"/>
+    <rect x="110" y="100" width="1180" height="700" rx="36" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <rect x="140" y="130" width="1120" height="640" rx="28" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="700" y="195" font-size="52" font-weight="900" fill="url(#gold)">Wedding Invitation</text>
+    <text x="700" y="235" font-size="18" font-weight="650" fill="#ffffff" opacity=".78">Chettinad • Traditional warmth with a modern touch</text>
+    <text x="700" y="262" font-size="16" fill="#ffffff" opacity=".68">June 4, 2026</text>
+  </g>
+
+  <!-- Chettinad house (more detailed) -->
+  <g transform="translate(0,0)">
+    <path d="M210 610
+             C235 530 330 470 430 450
+             L430 395 L475 395 L475 435
+             C560 392 640 375 700 375
+             C760 375 840 392 925 435
+             L925 395 L970 395 L970 450
+             C1070 470 1165 530 1190 610
+             L1190 720 L210 720 Z"
+          fill="#0f2b4d" opacity=".72" stroke="#ffffff" stroke-opacity=".08" stroke-width="2"/>
+    <!-- Pillars -->
+    <g fill="#0a1f35" opacity=".85">
+      <rect x="300" y="575" width="28" height="145" rx="10"/>
+      <rect x="380" y="565" width="28" height="155" rx="10"/>
+      <rect x="460" y="555" width="28" height="165" rx="10"/>
+      <rect x="912" y="555" width="28" height="165" rx="10"/>
+      <rect x="992" y="565" width="28" height="155" rx="10"/>
+      <rect x="1072" y="575" width="28" height="145" rx="10"/>
+    </g>
+    <!-- Roof line -->
+    <path d="M270 595 C400 500 560 460 700 460 C840 460 1000 500 1130 595"
+          fill="none" stroke="url(#goldDeep)" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+    <path d="M310 660 H1090" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="4" stroke-linecap="round"/>
+    <!-- Windows -->
+    <g fill="#0b1624" opacity=".75" stroke="#ffffff" stroke-opacity=".08" stroke-width="2">
+      <rect x="520" y="520" width="78" height="70" rx="10"/>
+      <rect x="610" y="510" width="90" height="80" rx="12"/>
+      <rect x="720" y="510" width="90" height="80" rx="12"/>
+      <rect x="820" y="520" width="78" height="70" rx="10"/>
+    </g>
+  </g>
+
+  <!-- Bride & Groom (knot-tying moment) -->
+  <g filter="url(#soft3d)">
+    <!-- Bride -->
+    <g transform="translate(540,450)">
+      <circle cx="0" cy="0" r="44" fill="#191927"/>
+      <circle cx="-14" cy="-8" r="6" fill="#ffffff" fill-opacity=".10"/>
+      <path d="M-18 -8 C-8 -26 16 -26 26 -6" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Jewelry + neck (thaali chain base) -->
+      <path d="M-34 70 C-14 52 14 52 34 70" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" opacity=".95"/>
+      <path d="M-22 82 C-10 92 10 92 22 82" fill="none" stroke="url(#goldDeep)" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+
+      <!-- Saree -->
+      <path d="M-54 90 C-36 28 36 28 54 90 L48 220 C36 250 -36 250 -48 220 Z"
+            fill="#0f0f18" stroke="#ffffff" stroke-opacity=".10" stroke-width="2"/>
+      <path d="M-48 118 C-18 172 18 172 48 118" fill="none" stroke="#e50914" stroke-opacity=".60" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-44 220 L44 220 L28 320 C14 352 -14 352 -28 320 Z"
+            fill="#112846" opacity=".86" stroke="#ffffff" stroke-opacity=".10" stroke-width="2"/>
+
+      <!-- Bride hands (holding still) -->
+      <path d="M-54 150 C-88 170 -88 210 -62 234" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="10" stroke-linecap="round"/>
+      <path d="M54 150 C88 170 88 210 62 234" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <!-- Groom -->
+    <g transform="translate(860,450)">
+      <circle cx="0" cy="0" r="44" fill="#191927"/>
+      <circle cx="-14" cy="-8" r="6" fill="#ffffff" fill-opacity=".10"/>
+      <path d="M-18 -8 C-8 -26 16 -26 26 -6" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Turban accent -->
+      <path d="M-48 -18 C-18 -44 18 -44 48 -18" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="40" cy="-14" r="9" fill="url(#gold)"/>
+
+      <!-- Suit -->
+      <path d="M-56 96 C-36 30 36 30 56 96 L52 260 C38 292 -38 292 -52 260 Z"
+            fill="#0f0f18" stroke="#ffffff" stroke-opacity=".10" stroke-width="2"/>
+      <path d="M-52 130 C-22 184 22 184 52 130" fill="none" stroke="#e50914" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Groom arm reaching to tie knot -->
+      <path d="M-36 148 C-130 170 -220 198 -300 214" fill="none" stroke="url(#goldDeep)" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+      <path d="M-52 156 C-140 184 -230 214 -300 226" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Hand -->
+      <circle cx="-300" cy="220" r="12" fill="url(#gold)" opacity=".95"/>
+    </g>
+
+    <!-- Thaali chain + knot highlight between groom and bride -->
+    <path d="M818 520 C740 520 700 520 622 520" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+    <path d="M700 520 C680 540 680 552 700 565 C720 552 720 540 700 520 Z"
+          fill="url(#goldDeep)" opacity=".95"/>
+    <path d="M692 544 C700 552 708 544 700 536" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+
+  <!-- Corner motifs -->
+  <g fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="3" stroke-linecap="round">
+    <path d="M170 170 C230 130 250 165 260 200 C275 250 240 270 200 248"/>
+    <path d="M1230 170 C1170 130 1150 165 1140 200 C1125 250 1160 270 1200 248"/>
+    <path d="M170 730 C230 770 250 735 260 700 C275 650 240 630 200 652"/>
+    <path d="M1230 730 C1170 770 1150 735 1140 700 C1125 650 1160 630 1200 652"/>
+  </g>
+</svg>
