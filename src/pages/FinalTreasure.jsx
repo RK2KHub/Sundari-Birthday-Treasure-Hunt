@@ -40,7 +40,7 @@ export default function FinalTreasure(){
       setMsg("Unlocked 💙");
     } else {
       setUnlocked(false);
-      setMsg("Wrong password. Try: Sundari2802 / RS2802 / 2802");
+      setMsg("Wrong password. Try: special occassions");
     }
   };
 
@@ -111,15 +111,15 @@ export default function FinalTreasure(){
               <div className="finalCard">
                 <div className="finalTop">
                   <div className="finalCircle">
-                    <img src={import.meta.env.BASE_URL + "assets/couple/left.jpg"} alt="Couple photo left" />
+                                          <img src={import.meta.env.BASE_URL + "assets/couple/left.JPG"} alt="Couple photo left" className="couple-circle" />
                   </div>
                   <div className="finalCircle">
-                    <img src={import.meta.env.BASE_URL + "assets/couple/right.jpg"} alt="Couple photo right" />
+                    <img src={import.meta.env.BASE_URL + "assets/couple/right.JPG"} alt="Couple photo right" />
                   </div>
                 </div>
 
                 <div className="finalInvite">
-                  <img src={import.meta.env.BASE_URL + "assets/doodles/wedding-card-ai.png"} alt="Chettinad wedding invitation card" />
+                                      <img src={import.meta.env.BASE_URL + "assets/doodles/wedding-card-ai.png"} alt="Chettinad wedding invitation card" className="couple-circle" />
                 </div>
               </div>
 
