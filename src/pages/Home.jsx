@@ -16,7 +16,7 @@ export default function Home() {
       <div className="hero">
         <div className="hero__bg" aria-hidden="true" />
         <div className="hero__card">
-          <div className="pill">NETFLIX-STYLE ROMANTIC GAME</div>
+          <div className="pill">A Game to unlock treasures</div>
           <h1 className="h1">Happy Birthday, Sundari ❤️</h1>
           <p className="p">
             8 treasure pages. Each page has a 4-photo slideshow, a small poem, and one romantic question.
